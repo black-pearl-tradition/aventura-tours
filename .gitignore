@@ -1,0 +1,7 @@
+# Keep unrelated installer binaries out of the website repository.
+/assets/images/YTDSetup.exe
+/assets/images/home.html
+
+# Operating system metadata.
+Thumbs.db
+.DS_Store

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse locally guided Uganda tours, from gorilla trekking and wildlife safaris to Kampala city experiences and relaxing lake escapes." />
+  <title>Our Tours | Aventura Tours and Travel</title>
+  <meta name="theme-color" content="#0a2540" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" href="../assets/logo/favicon.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="../assets/logo/favicon.png" />
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/tours.js" defer></script>
+  <!--  Google Fonts -->
+<link rel="stylesheet" href="../assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--  Font Awesome Icons -->
+</head>
+<body>
+  <site-header active="tours"></site-header>
+
+  <section class="tours-page">
+    <h1>Explore Our Tours</h1>
+    <p>Choose from our curated selection of unforgettable experiences across Uganda and East Africa. Whether you're seeking adventure, culture, or relaxation — we’ve got the perfect tour for you.</p>
+
+    <div class="tour-filters" aria-label="Filter tour experiences">
+      <label class="tour-search-label" for="tour-search">Search experiences</label>
+      <input id="tour-search" type="search" placeholder="Try gorillas, Nile, Kampala..." autocomplete="off" />
+      <label class="tour-price-label" for="tour-price">Maximum starting price</label>
+      <select id="tour-price">
+        <option value="any">Any price</option>
+        <option value="370000">UGX 370,000 and under</option>
+        <option value="1850000">UGX 1,850,000 and under</option>
+        <option value="3700000">UGX 3,700,000 and under</option>
+        <option value="7400000">UGX 7,400,000 and under</option>
+      </select>
+      <div class="tour-categories" role="group" aria-label="Experience category">
+        <button type="button" data-category-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-category-filter="wildlife" aria-pressed="false">Wildlife</button>
+        <button type="button" data-category-filter="river" aria-pressed="false">River</button>
+        <button type="button" data-category-filter="culture" aria-pressed="false">Culture</button>
+        <button type="button" data-category-filter="escape" aria-pressed="false">Getaways</button>
+        <button type="button" data-category-filter="custom" aria-pressed="false">Custom</button>
+      </div>
+      <p id="tour-results-count" aria-live="polite"></p>
+    </div>
+
+    <!-- Tour Cards -->
+    <div class="tour-card" data-tour-card data-name="Wild Uganda Safari gorilla trekking wildlife safari Bwindi" data-category="wildlife" data-price="3108000">
+      <img src="../assets/images/tours/Forest-Elephants-in-Bwindi-Impenetrable-National-Park-1024x683.jpg" alt="Wild Uganda Safari" />
+      <span class="badge-eco">Wildlife &amp; nature</span>
+      <h2>Wild Uganda Safari</h2>
+      <p>Rainforest trekking and savannah wildlife across Bwindi and Queen Elizabeth National Park.</p>
+      <ul class="tour-card-details">
+        <li><strong>Duration:</strong> 7 days</li>
+        <li><strong>Best for:</strong> Wildlife and nature lovers</li>
+        <li><strong>Starting from:</strong> UGX 3,108,000 per person</li>
+      </ul>
+      <a class="btn btn-primary" href="tour-details.html">View safari itinerary</a>
+    </div>
+
+    <div class="tour-card" data-tour-card data-name="Nile River Cruise Murchison Falls boat wildlife" data-category="river" data-price="1165500">
+      <img src="../assets/images/tours/2-days-murchison-falls-safari.jpg" alt="Nile River Cruise" />
+      <span class="badge-eco">River &amp; wildlife</span>
+      <h2>Nile River Cruise</h2>
+      <p>Take in the Nile around Murchison Falls, with time for river scenery and wildlife viewing.</p>
+      <ul class="tour-card-details">
+        <li><strong>Duration:</strong> 3 days</li>
+        <li><strong>Best for:</strong> River scenery and wildlife</li>
+        <li><strong>Starting from:</strong> UGX 1,165,500 per person</li>
+      </ul>
+      <a class="btn btn-primary" href="booking.html?tour=Nile%20River%20Cruise">Plan this tour</a>
+    </div>
+
+    <div class="tour-card" data-tour-card data-name="Kampala City Secrets city markets art culture" data-category="culture" data-price="207200">
+      <img src="../assets/images/tours/best-of-kampala-city-tour_8ZbaH.jpeg" alt="Kampala City Secrets" />
+      <span class="badge-eco">Culture &amp; city</span>
+      <h2>Kampala City Secrets</h2>
+      <p>Discover Kampala through its markets, art spaces, cultural stops, and lively neighborhoods.</p>
+      <ul class="tour-card-details">
+        <li><strong>Duration:</strong> 1 day</li>
+        <li><strong>Best for:</strong> First-time visitors and culture seekers</li>
+        <li><strong>Starting from:</strong> UGX 207,200 per person</li>
+      </ul>
+      <a class="btn btn-primary" href="booking.html?tour=Kampala%20City%20Secrets">Plan this tour</a>
+    </div>
+
+    <div class="tour-card" data-tour-card data-name="Weekend Getaways Lake Bunyonyi Ssese Islands Mabira Forest" data-category="escape" data-price="647500">
+      <img src="../assets/images/tours/nyegenyegemain_weekwnd_vibes.jpg" alt="Weekend Getaways" />
+      <span class="badge-eco">Slow travel</span>
+      <h2>Weekend Getaways</h2>
+      <p>Choose a short escape to Lake Bunyonyi, the Ssese Islands, or Mabira Forest.</p>
+      <ul class="tour-card-details">
+        <li><strong>Duration:</strong> 2 days</li>
+        <li><strong>Best for:</strong> Couples, friends, and short breaks</li>
+        <li><strong>Starting from:</strong> UGX 647,500 per person</li>
+      </ul>
+      <a class="btn btn-primary" href="booking.html?tour=Weekend%20Getaways">Plan this tour</a>
+    </div>
+
+    <div class="tour-card" data-tour-card data-name="Custom Itineraries honeymoon anniversaries private trip" data-category="custom" data-price="custom">
+      <img src="../assets/images/tours/mestil_hotel.jpeg" alt="Custom Itinerary" />
+      <span class="badge-eco">Made for you</span>
+      <h2>Custom Itineraries</h2>
+      <p>Shape a private trip around your interests, preferred pace, dates, and budget.</p>
+      <ul class="tour-card-details">
+        <li><strong>Duration:</strong> Flexible</li>
+        <li><strong>Best for:</strong> Special occasions and tailored trips</li>
+        <li><strong>Price:</strong> Prepared to match your itinerary</li>
+      </ul>
+      <a class="btn btn-primary" href="booking.html?tour=Custom%20Itinerary">Plan your custom trip</a>
+    </div>
+    <p id="tour-empty-state" class="tour-empty-state" hidden>No tours match those filters. Try changing your search or price range.</p>
+
+    <!-- Destination Table -->
+    <div class="destination-table">
+      <h2>Destinations & Highlights</h2>
+      <table>
+        <tr>
+          <th>Destination</th>
+          <th>Highlights</th>
+        </tr>
+        <tr class="green_background">
+          <td>Bwindi Impenetrable Forest</td>
+          <td>Gorilla trekking, rainforest hikes, birdwatching</td>
+        </tr>
+        <tr>
+          <td>Murchison Falls National Park</td>
+          <td>Nile River cruise, game drives, waterfall viewing</td>
+        </tr>
+        <tr class="green_background">
+          <td>Queen Elizabeth National Park</td>
+          <td>Tree-climbing lions, boat safari, crater lakes</td>
+        </tr>
+        <tr>
+          <td>Jinja</td>
+          <td>Source of the Nile, white-water rafting, bungee jumping</td>
+        </tr>
+        <tr class="green_background">
+          <td>Lake Bunyonyi</td>
+          <td>Canoeing, island hopping, scenic relaxation</td>
+        </tr>
+        <tr>
+          <td>Kampala</td>
+          <td>Cultural sites, local markets, museums, nightlife</td>
+        </tr>
+        <tr class="green_background">
+          <td>Entebbe</td>
+          <td>Botanical gardens, lakeside beaches, wildlife sanctuary</td>
+        </tr>
+        <tr>
+          <td>Ssese Islands</td>
+          <td>Beach retreats, fishing, nature walks</td>
+        </tr>
+        <tr class="green_background">
+          <td>Mabira Forest</td>
+          <td>Zip-lining, forest hikes, birdwatching</td>
+        </tr>
+        <tr>
+          <td>Kidepo Valley National Park</td>
+          <td>Remote wilderness, big game viewing, cultural encounters</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+ <site-footer></site-footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Aventura Tours and Travel",
+  "short_name": "Aventura",
+  "description": "Locally guided journeys in Uganda and East Africa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#0a2540",
+  "icons": [
+    {
+      "src": "/assets/logo/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

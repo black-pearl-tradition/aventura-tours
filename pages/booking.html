@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Start planning your Uganda adventure with Aventura Tours and Travel. Share your dates and trip preferences with our local team." />
+  <title>Book a Tour | Aventura Tours and Travel</title>
+  <meta name="theme-color" content="#0a2540" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" href="../assets/logo/favicon.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="../assets/logo/favicon.png" />
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/booking.js" defer></script>
+  <!--  Google Fonts -->
+<link rel="stylesheet" href="../assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--  Font Awesome Icons -->
+</head>
+<body>
+  <site-header active="booking"></site-header>
+
+  <section class="booking">
+    <h1>Book Your Adventure</h1>
+    <p>Tell us when you would like to travel and who is coming. Our team will follow up to confirm availability and prepare a trip quote.</p>
+    <form id="booking-form" class="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="tour">Select Tour:</label>
+      <select id="tour" name="tour" required>
+        <option value=""> Choose a Tour </option>
+        <option value="Wild Uganda Safari">Wild Uganda Safari</option>
+        <option value="Nile River Cruise">Nile River Cruise</option>
+        <option value="Kampala City Secrets">Kampala City Secrets</option>
+        <option value="Weekend Getaways">Weekend Getaways</option>
+        <option value="Custom Itinerary">Custom Itinerary</option>
+      </select>
+
+      <label for="date">Preferred Start Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="20" value="1" required />
+      <p id="booking-estimate" class="booking-estimate" aria-live="polite"></p>
+      <p class="booking-price-note">Estimates use the listed starting price per person multiplied by the number of guests. They are indicative, not a confirmed quote. Your written quote should specify what is included, such as transport, accommodation, meals, park entry, and permits, based on your chosen tour and dates.</p>
+
+      <label for="message">Additional Notes:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Share your preferred destinations, accommodation style, dietary or mobility needs, or any questions."></textarea>
+
+      <button class="btn-primary" type="submit">Prepare booking inquiry</button>
+      <p id="booking-status" class="booking-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <site-footer></site-footer>
+</body>
+</html>
