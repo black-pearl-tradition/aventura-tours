@@ -45,12 +45,48 @@
       </select>
 
       <label for="date">Preferred Start Date:</label>
-      <input type="date" id="date" name="date" required />
+      <div class="date-picker-field">
+        <input type="date" id="date" name="date" required aria-describedby="date-picker-help" />
+        <button class="date-picker-toggle" type="button" aria-controls="booking-calendar" aria-expanded="false">Choose from calendar</button>
+      </div>
+      <p id="date-picker-help" class="date-picker-help">Choose a date using the field or open the calendar below. Past dates are unavailable.</p>
+      <section id="booking-calendar" class="booking-calendar" aria-label="Choose a travel date" hidden>
+        <div class="booking-calendar-header">
+          <button type="button" class="calendar-month-button" data-calendar-previous aria-label="Previous month">‹</button>
+          <h2 data-calendar-month aria-live="polite"></h2>
+          <button type="button" class="calendar-month-button" data-calendar-next aria-label="Next month">›</button>
+        </div>
+        <div class="booking-calendar-grid" role="group" aria-label="Calendar days">
+          <span aria-hidden="true">Mon</span><span aria-hidden="true">Tue</span><span aria-hidden="true">Wed</span><span aria-hidden="true">Thu</span><span aria-hidden="true">Fri</span><span aria-hidden="true">Sat</span><span aria-hidden="true">Sun</span>
+        </div>
+        <div class="booking-calendar-grid booking-calendar-days" data-calendar-days></div>
+      </section>
 
       <label for="guests">Number of Guests:</label>
       <input type="number" id="guests" name="guests" min="1" max="20" value="1" required />
       <p id="booking-estimate" class="booking-estimate" aria-live="polite"></p>
       <p class="booking-price-note">Estimates use the listed starting price per person multiplied by the number of guests. They are indicative, not a confirmed quote. Your written quote should specify what is included, such as transport, accommodation, meals, park entry, and permits, based on your chosen tour and dates.</p>
+
+      <fieldset class="booking-payment" aria-describedby="payment-note">
+        <legend>Payment preference</legend>
+        <p>Tell us how you would prefer to pay if your booking is confirmed.</p>
+
+        <label for="payment-plan">Payment amount</label>
+        <select id="payment-plan" name="paymentPlan" required>
+          <option value="">Choose a payment option</option>
+          <option value="Deposit (amount to be confirmed)">Deposit (amount to be confirmed by our team)</option>
+          <option value="Full estimated amount">Full estimated amount</option>
+        </select>
+
+        <label for="payment-method">Preferred payment method</label>
+        <select id="payment-method" name="paymentMethod" required>
+          <option value="">Choose a payment method</option>
+          <option value="Flutterwave Mobile Money (MTN or Airtel)">Mobile Money (MTN or Airtel, via Flutterwave)</option>
+          <option value="Flutterwave card">Card (via Flutterwave)</option>
+        </select>
+
+        <p id="payment-note" class="booking-payment-note">Payment is not enabled on this website. This preference will be included in your email inquiry only; no payment details are requested and no charge will be made.</p>
+      </fieldset>
 
       <label for="message">Additional Notes:</label>
       <textarea id="message" name="message" rows="4" placeholder="Share your preferred destinations, accommodation style, dietary or mobility needs, or any questions."></textarea>

@@ -37,9 +37,9 @@ Static website for Aventura Tours and Travel.
 
 The shared header and footer are registered as `<site-header>` and `<site-footer>` custom elements in `assets/js/main.js`. Add those elements to a page and include the script to reuse the same navigation and footer. The supplied animal-head artwork is used in the shared header and footer as `assets/logo/logo.png`; the favicon and web-app icon use the matching `assets/logo/favicon.png`. All project styles are in `assets/css/main.css`.
 
-The homepage highlights Ugandan communities, local dishes, cultural dates, and mountain and waterfall destinations.
+The homepage highlights Ugandan communities, local dishes, cultural dates, and mountain and waterfall destinations. The cultural calendar page provides event-planning notes, while the booking form includes an interactive date picker.
 
-The tours page has client-side search, category, and maximum-price filters. The booking page validates inputs and prepares an email inquiry; it does not submit to a booking server.
+The tours page has client-side search, category, and maximum-price filters. The booking page validates inputs and prepares an email inquiry with payment amount and method preferences; it does not submit bookings or process payments. Payment choices are informational only, and the booking form never requests card or Mobile Money credentials.
 
 Tour prices are displayed in Ugandan shillings (UGX). Prices shown reflect a 30% reduction from the converted UGX starting prices; keep tour-card data values, displayed prices, itinerary/service prices, and booking estimates in sync when changing rates or prices.
 

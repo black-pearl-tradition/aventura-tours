@@ -10,6 +10,7 @@
         ["home", "Home", `${root}index.html`],
         ["tours", "Tours", `${root}pages/tours.html`],
         ["services", "Services", `${root}pages/services.html`],
+        ["calendar", "Calendar", `${root}pages/calendar.html`],
         ["about", "About us", `${root}pages/about.html`],
         ["booking", "Book now", `${root}pages/booking.html`],
         ["contact", "Contact", `${root}pages/contact.html`],
@@ -78,6 +79,7 @@
               <a href="${root}pages/tours.html">Explore tours</a>
               <a href="${root}pages/about.html">About Aventura</a>
               <a href="${root}pages/services.html">Our services</a>
+              <a href="${root}pages/calendar.html">Cultural calendar</a>
               <a href="${root}pages/booking.html">Plan your trip</a>
               <a href="${root}pages/contact.html">Get in touch</a>
             </nav>
